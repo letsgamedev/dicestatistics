@@ -1,0 +1,71 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  max-width: 900px;
+  margin: auto;
+  background-color: #373737;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+#tabs {
+  background-color: #f1f1f1;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #ccc;
+  float: left;
+  margin-right: 10px;
+}
+
+.tab:hover {
+  background-color: #ddd;
+}
+
+#content {
+  padding: 10px;
+  background-color: #efdfbb;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.bar {
+  height: 20px;
+  background-color: #4caf50; /* Grüne Farbe, ändern Sie nach Bedarf */
+  margin-bottom: 10px;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 10px;
+  border-bottom: #c6b294 solid 2px;
+}
+
+.dice {
+  flex: 15%;
+  text-align: center;
+}
+.value {
+  flex: 15%;
+}
+.bar-container {
+  flex: 80%;
+}
+
+#desc {
+  padding: 10px;
+  background-color: #dcdcdc;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 20px;
+}
