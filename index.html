@@ -398,13 +398,17 @@
         contentDiv.innerHTML = ""; // Leert den Inhalt
         contentDiv.innerHTML += addHeader("WÜRFEL", "Ø-WERT", "BALKEN");
 
+        let statisticsDataContent = "";
+
         for (var i = 0; i < statisticsData[index].length; i++) {
-          contentDiv.innerHTML += fillTemp(
+          statisticsDataContent += fillTemp(
             statisticsData[index][i][0].join(" "),
             statisticsData[index][i][1],
             (statisticsData[index][i][1] / 20) * 100
           );
         }
+
+        contentDiv.innerHTML += statisticsDataContent;
       }
 
       function addHeader(first, second, third) {
